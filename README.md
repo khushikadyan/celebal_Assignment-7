@@ -24,15 +24,18 @@ This project is designed to automate the ingestion and transformation of multipl
 | `H_ECOM_ORDER.csv` | No transformations (loaded as-is) | `H_ECOM_Orders` |
 
 ## Repository Structure
-ASSIG.../          # Parent folder
-├── data_lake/     # Input files
-│   ├── CUST_MSTR_201911..
-│   ├── CUST_MSTR_201911..
-│   ├── H_ECOM_ORDER.csv
-│   └── master_child_export..
-├── script.py      # Main processing script
-└── test.py        # Connection test script
-|__server.sql
+| Path                                       | Description                       |
+| ------------------------------------------ | --------------------------------- |
+| `ASSIG.../`                                | 📁 Parent folder                  |
+| ├── `data_lake/`                           | 📂 Input files directory          |
+| │   ├── `CUST_MSTR_20191112.csv`           | Customer master file (2019-11-12) |
+| │   ├── `CUST_MSTR_20191113.csv`           | Customer master file (2019-11-13) |
+| │   ├── `H_ECOM_ORDER.csv`                 | E-commerce orders file            |
+| │   └── `master_child_export-20191112.csv` | Master-child data file            |
+| ├── `script.py`                            | 🧠 Main data processing script    |
+| ├── `test.py`                              | 🔌 Database connection test       |
+| └── `server.sql`                           | 🗄️ SQL schema creation script    |
+
 
 ## Setup
 1. Install requirements: `pip install -r requirements.txt`
@@ -52,6 +55,14 @@ ASSIG.../          # Parent folder
    cd assignment-data-pipeline
    ```
 ---
+## Screenshots
+
+<img width="605" height="172" alt="Screenshot 2025-07-16 190504" src="https://github.com/user-attachments/assets/fc493231-b68e-4782-b471-090946375d1a" />
+
+<img width="455" height="123" alt="Screenshot 2025-07-16 190515" src="https://github.com/user-attachments/assets/0f1b06b3-c49c-41cd-b321-a8e7835842b4" />
+
+<img width="365" height="104" alt="Screenshot 2025-07-16 190525" src="https://github.com/user-attachments/assets/d6d47f65-9a50-426f-9d05-9508529fc341" />
+
 ## Author
 Khushi Kadyan
 
