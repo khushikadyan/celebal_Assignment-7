@@ -24,11 +24,35 @@ This project is designed to automate the ingestion and transformation of multipl
 | `H_ECOM_ORDER.csv` | No transformations (loaded as-is) | `H_ECOM_Orders` |
 
 ## Repository Structure
-├── datalake/
-│ ├── CUST_MSTR_20191112.csv
-│ ├── CUST_MSTR_20191113.csv
-│ ├── master_child_export-20191112.csv
-│ └── H_ECOM_ORDER.csv
-├── script.py # Main ETL pipeline script
-├── tesst.py # Script used for testing/debugging
-└── server.sql # SQL file for creating required tables
+ASSIG.../          # Parent folder
+├── data_lake/     # Input files
+│   ├── CUST_MSTR_201911..
+│   ├── CUST_MSTR_201911..
+│   ├── H_ECOM_ORDER.csv
+│   └── master_child_export..
+├── script.py      # Main processing script
+└── test.py        # Connection test script
+|__server.sql
+
+## Setup
+1. Install requirements: `pip install -r requirements.txt`
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Configure database connection in `config.ini`
+4. Place CSV files in `data_lake` directory
+5. Run:
+   ```bash
+    `python src/main.py`
+   ```
+
+6. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/assignment-data-pipeline.git
+   cd assignment-data-pipeline
+   ```
+---
+## Author
+Khushi Kadyan
+
+Btech CSE (DSAI)
