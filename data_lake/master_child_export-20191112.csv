@@ -1,0 +1,3 @@
+parent_id,child_id,relationship
+2001,3001,primary
+2001,3002,secondary
